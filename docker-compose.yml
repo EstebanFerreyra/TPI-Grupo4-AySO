@@ -1,0 +1,11 @@
+version: "3"
+services:
+  service1: 
+    container_name: "containerd-tp-g4"
+    build: .
+    ports: 
+      - "8081:80"
+    restart: "unless-stopped"
+    
+ 
+  
