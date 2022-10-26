@@ -2,11 +2,13 @@ FROM ubuntu:20.04
 
 USER root
 
-#solucionar con variable
+ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBCONF_NONINTERACTIVE_SEEN=true
+
 RUN apt-get update
 RUN apt-get install -y curl 
-RUN apt-get install -y telnet 
-RUN apt-get install -y apache2
+RUN apt-get install -y telnet
+RUN apt-get install -y apache2 curl 
 
 WORKDIR /var/www/html
 

@@ -1,11 +1,12 @@
 version: "3"
 services:
-  service1: 
-    container_name: "containerd-tp-g4"
+  apache-service: 
+    container_name: "container-apache"
     build: .
     ports: 
-      - "8081:80"
+      - "80:80"
     restart: "unless-stopped"
     
+
  
   
