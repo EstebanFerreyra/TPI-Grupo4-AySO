@@ -14,4 +14,5 @@ WORKDIR /var/www/html
 
 COPY index.html . 
 
+CMD ["apache2ctl","-D","FOREGROUND"]
 

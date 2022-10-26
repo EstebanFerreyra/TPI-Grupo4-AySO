@@ -3,10 +3,16 @@ services:
   apache-service: 
     container_name: "container-apache"
     build: .
+    volumes: 
+      - "volume-apache:/var/www/html"
     ports: 
-      - "80:80"
+      - "8082:80"
     restart: "unless-stopped"
-    
+    networks:
+      - "networks-apache"
 
- 
-  
+volumes:
+  volume-apache:
+
+networks:
+  networks-apache:
