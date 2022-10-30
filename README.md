@@ -48,6 +48,10 @@ Steps to follow:
 
 - To continue, you must upload the service with "docker-compose up -d" command. 
 
+- Write "docker ps -a" in the terminal to see the ports. 
+
+- In order to see the HTML file from our web app, you must copy the ports seen on the terminal and paste them in your local browser. 
+
 - In case that you want to stop the ejecution to this service, you must stop it manually with the following commands:
 
 	- docker network rm (ID network). 
