@@ -44,6 +44,8 @@ Steps to follow:
 
 - The second step is to open the terminal or console to run the software. 
 
+- Go to Docker Hub Website, search for "estebanferreyra", enter in the repository to copy "docker pull estebanferreyra/tpi-grupo4-ayso_apache-service". After this, go to the terminal and copy the command and press enter. 
+
 - Once there, you must build the image using a docker compose with "docker-compuse build" command. This process could take a few minutes because of repositories's updates.
 
 - To continue, you must upload the service with "docker-compose up -d" command. 
