@@ -6,7 +6,7 @@ services:
     volumes: 
       - "volume-apache:/var/www/html"
     ports: 
-      - "8082:80"
+      - "8080:80"
     restart: "unless-stopped"
     networks:
       - "networks-apache"
