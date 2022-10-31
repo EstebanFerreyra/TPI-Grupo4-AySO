@@ -58,4 +58,4 @@ Steps to follow:
 
 	- docker network rm (ID network). 
 
-	- docker-compose down 
+	- docker-compose down.
